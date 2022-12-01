@@ -1,0 +1,14 @@
+CREATE TABLE users(
+        id INTEGER NOT NULL, 
+        username VARCHAR(100) NOT NULL, 
+        password VARCHAR(100) NOT NULL, 
+        created_at DATETIME DEFAULT (CURRENT_TIMESTAMP), 
+        PRIMARY KEY (id)
+);
+CREATE TABLE kas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    user TEXT NOT NULL,
+    uang INTEGER NOT NULL,
+    totalUang INTEGER NOT NULL,
+    time TEXT NOT NULL UNIQUE
+);
