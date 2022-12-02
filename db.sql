@@ -1,5 +1,6 @@
 CREATE TABLE users(
         id INTEGER NOT NULL, 
+        hakAkses INTEGER NOT NULL,
         username VARCHAR(100) NOT NULL, 
         password VARCHAR(100) NOT NULL, 
         created_at DATETIME DEFAULT (CURRENT_TIMESTAMP), 
